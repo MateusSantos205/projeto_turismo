@@ -27,7 +27,7 @@ try{
     $comando->execute();
 
     // exibe uma mensagem ao inserir
-    echo "Cadastro realizado com sucesso";
+    echo "Cadastro realizado com sucesso!";
 
 }catch(PDOException $error){
     

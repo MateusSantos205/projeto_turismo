@@ -11,7 +11,7 @@ try{
     $con = new PDO("mysql:host=".SERVIDOR.";dbname=".BASEDADOS, USUARIO, SENHA);
      // set the PDO error mode to exception
      $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-     echo "Conectado com Sucesso!";
+    //  echo "Conectado com Sucesso!";
 
 }catch(PDOException $error){
     echo " Erro ao conectar com o banco de dados".$error->getMessage();
