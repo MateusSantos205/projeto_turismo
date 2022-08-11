@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h3-viagens{
+    padding-left: 10px;
+}
+
+#grid-viagens{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+
+.figure-viagens{
+    border: 1px solid #000;   
+    border-radius: 4px;
+}
+
+.img-viagens{
+    width: 100%;
+
+}
+
+.figcaption-viagens{
+    padding: 10px;
+}
+
+.btn-comprar{
+    display: grid;
+    padding: 6px 12px;
+    margin: 10px auto;
+    background-color: #40b86e;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+}

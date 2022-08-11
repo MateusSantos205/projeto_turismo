@@ -18,7 +18,7 @@ try{
     $desc = $_POST['desc'];
 
     // variaveis que recebe a query que sera executada no banco de dados
-    $sql = "INSERT INTO tb_viagens (`titulo`,`local`,`valor`,`desc`) value ('$titulo', '$local', '$valor', '$desc')";
+    $sql = "INSERT INTO tb_viagens (`titulo`,`local`,`valor`,`desc`) values ('$titulo', '$local', '$valor', '$desc')";
 
     // prepara a execução da query sql acima
     $comando = $con->prepare($sql);
@@ -29,8 +29,13 @@ try{
     // exibe uma mensagem ao inserir
     echo "Cadastro realizado com sucesso!";
 
+    // fechar conexão
+    $con = null;
+
 }catch(PDOException $error){
-    
+    echo $erro->getMessage();
+
+    die();
 }
 
 ?>
