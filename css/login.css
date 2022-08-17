@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
+
+input{
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.btn{
+     text-align: center;
+     
+}
+
+button{
+    width: 100px;
+}
+
+fieldset{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+label{
+    display: grid;
+    padding-bottom: 5px
+}
