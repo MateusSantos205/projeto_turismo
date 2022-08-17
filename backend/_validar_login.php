@@ -7,7 +7,8 @@ try{
     $usuario = $_POST['usuario'];
     $senha = $_POST['senha'];
 // //////////////////////////////
-    $sql = "SELECT *FROM tb_login WHERE email='$usuario' AND senha = '$senha' AND ativo = 1";
+                                                        // BINARY deixa a senha Case Sensitive
+    $sql = "SELECT *FROM tb_login WHERE email='$usuario' AND BINARY senha = '$senha' AND ativo = 1";
 
     $comando = $con->prepare($sql);
 
