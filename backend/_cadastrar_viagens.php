@@ -8,14 +8,33 @@ try{
     // exibe as variaveis globais recebidas via POST
 
     // echo"<pre>";
-    // var_dump($_POST);
+    // var_dump($_FILES);
     // echo"<pre>";
+    //  exit/
+
 
     // variaveis que recebem os dados enviados via POST
     $titulo = $_POST['titulo'];
     $local = $_POST['local'];
     $valor = $_POST['valor'];
     $desc = $_POST['desc'];
+    $imagem = $_FILES['imagem'];
+
+    // ////////////////////////////////////////////////////////////////////////
+    // Upload da imagem
+    // Caminho onde a imagem esera armazenada
+
+    $pasta = '../img/upload/';
+
+// Define um novo nome da imagem para upload
+    $imagem = 'imagem.jpg';
+
+    // Função PHP que faz o upload da imagem
+    move_uploaded_file($_FILES['imagem']['tmp_name'],$pasta.$imagem);
+
+    exit;
+
+    // ////////////////////////////////////////////////////////////////////////
 
     // variaveis que recebe a query que sera executada no banco de dados
     $sql = "INSERT INTO tb_viagens (`titulo`,`local`,`valor`,`desc`) values ('$titulo', '$local', '$valor', '$desc')";
@@ -27,7 +46,9 @@ try{
     $comando->execute();
 
     // exibe uma mensagem ao inserir
-    echo "Cadastro realizado com sucesso!";
+    // echo "Cadastro realizado com sucesso!";
+
+    header('location:  ../admin/gerenciar_viagens.php');
 
     // fechar conexão
     $con = null;

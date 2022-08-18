@@ -12,7 +12,14 @@
     <div id="container">
 
         <h3>Cadastro de Viagens</h3>
-        <form action="../backend/_cadastrar_viagens.php" method="post">
+
+        <!--  -->
+        <hr>
+        <a href="gerenciar_viagens.php">Gerenciar Viagens</a>
+        <hr>
+
+        <!--  -->
+        <form action="../backend/_cadastrar_viagens.php" method="post" enctype="multipart/form-data">
 
             <div>
                 <label for="titulo">Titulo</label>
@@ -28,6 +35,13 @@
                 <label for="valor">Valor</label>
                 <input type="number" name="valor" id="valor">
             </div>
+
+            <!--  -->
+            <div>
+                <label for="imagem">Imagem</label>
+                <input type="file" name="imagem" id="imagem">
+            </div>
+            <!--  -->
 
             <div>
                 <label for="desc">Descrição</label>
