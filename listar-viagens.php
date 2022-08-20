@@ -50,7 +50,7 @@ try{
             <!--  -->
             <figure class="figure-viagens" >
 
-                <img class="img-viagens" src="img/viagem-faltando.png" alt="Destaque viagem">
+                <img class="img-viagens" src="img/upload/<?php echo $d['imagem']?>" alt="Destaque viagem">
 
                 <figcaption class="figcaption-viagens" >
                     <!-- Pacote de Inverno -->
