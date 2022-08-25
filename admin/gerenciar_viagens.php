@@ -40,6 +40,10 @@
         <a href="cadastrar_viagens.html">Cadastrar Viagens</a>
 
         <hr>
+
+        <a href="index.html">Sair</a>
+
+        <hr>
 <!--  -->
         <div id="tabela">
 

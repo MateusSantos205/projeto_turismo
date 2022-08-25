@@ -23,6 +23,15 @@ try{
     if($dados != null){  // "!=" diferente php
     // se, usuario e senha foram validos, irá entrar nesse trecho de codigo
 
+    // inicia a sessão
+    session_start();
+
+    // criar uma variavel de sessao e adiciona o email digitado
+    $_SESSION['usuario'] = $usuario;
+
+    // exibe o valor adicionado na variavel de sessao email
+    var_dump($_SESSION['usuario']);
+
     header('location: ../admin/gerenciar_viagens.php');
 
     
