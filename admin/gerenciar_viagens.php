@@ -1,5 +1,5 @@
 <?php
-
+    include '../backend/controle_sessao.php';
     include '../backend/conexao.php';
 
     try{
@@ -41,7 +41,7 @@
 
         <hr>
 
-        <a href="index.html">Sair</a>
+        <a href="../backend/logout.php">Sair</a>
 
         <hr>
 <!--  -->

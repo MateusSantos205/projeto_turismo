@@ -1,6 +1,6 @@
 <?php
 
-include '../backend/conexao.php';
+include 'conexao.php';
 
 try{
 // //////////////////////////////
@@ -30,7 +30,7 @@ try{
     $_SESSION['usuario'] = $usuario;
 
     // exibe o valor adicionado na variavel de sessao email
-    var_dump($_SESSION['usuario']);
+    // var_dump($_SESSION['usuario']);
 
     header('location: ../admin/gerenciar_viagens.php');
 

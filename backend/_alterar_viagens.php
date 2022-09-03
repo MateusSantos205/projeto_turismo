@@ -1,5 +1,5 @@
 <?php
-
+include 'controle_sessao.php';
 include 'conexao.php';
 
 try {
